@@ -39,7 +39,7 @@ body {
 }
 
 .header-list > li:hover {
-  background: blue;
+  color: blue;
 }
 
 .header-top {
@@ -78,4 +78,9 @@ main{
 
 .active {
   background: blue;
+  color: white;
+}
+
+.contact-info, .address, .phone-fax {
+  margin: 0;
 }
