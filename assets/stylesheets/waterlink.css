@@ -17,13 +17,11 @@ body {
 .header-nav {
   background: #248bcd;
   color: #fff;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 900px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -41,7 +39,7 @@ body {
 }
 
 .header-list > li:hover {
-  background: #blue;
+  background: blue;
 }
 
 .header-top {
@@ -62,4 +60,22 @@ body {
 
 main{
   width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.contact-info > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  background: blue;
 }
