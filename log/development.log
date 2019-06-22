@@ -1,0 +1,21 @@
+Started GET "/" for ::1 at 2019-06-21 23:33:24 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (15.2ms)
+Completed 200 OK in 60ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-21 23:41:19 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (25.0ms)
+Completed 200 OK in 83ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-21 23:41:22 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/edwardlu/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
