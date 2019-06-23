@@ -26,10 +26,6 @@ img {
   height: auto;
 }
 
-div {
-  margin-top: 10px;
-}
-
 input[type="password"],
 input[type="email"],
 input[type="text"],

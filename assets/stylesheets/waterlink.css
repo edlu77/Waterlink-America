@@ -3,47 +3,29 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background: linear-gradient(white, #248bcd);
   min-height: 100vh;
   flex-direction: column;
   align-items:center;
 }
 
-.header a {
-  display: block;
-  padding: 10px 20px;
-}
-
-.header-nav {
-  background: #248bcd;
-  color: #fff;
-  border: 1px solid black;
+#main {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 900px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-list {
+.header {
+  display: flex;
+  background: linear-gradient(white, #248bcd);
+  padding-top: 80px;
+}
+
+.header-content {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
-  width: 600px;
-}
-
-.header-list > li {
-  /* border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc; */
-}
-
-.header-list > li:hover {
-  color: blue;
-}
-
-.header-top {
-  display: flex;
+  width: 66%;
+  padding: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -58,11 +40,72 @@ body {
   width: 400px;
 }
 
-main{
-  width: 900px;
+.nav {
+  background: #248bcd;
+  color: #fff;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-list > li > a {
+  display: block;
+  padding: 2rem 1.5rem;
+}
+
+.nav-list > li:hover {
+  color: blue;
+}
+
+section {
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+}
+
+#section1 {
+  background: linear-gradient(#248bcd, white);
+}
+
+#section2 {
+  background: linear-gradient(white, #248bcd);
+}
+
+#section3 {
+  background: linear-gradient(#248bcd, white);
+}
+
+h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.section-content {
+  display: flex;
+  padding: 20px;
+}
+
+.section-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 66%;
+}
+
+.section-text > div {
+  margin-bottom: 10px;
+}
+
+.section-pic {
+  width: 33%;
+  margin-right: 20px;
 }
 
 .contact-info {
@@ -77,10 +120,19 @@ main{
 }
 
 .active {
-  background: blue;
+  border-bottom: .25rem solid #64a19d;
   color: white;
 }
 
 .contact-info, .address, .phone-fax {
   margin: 0;
+}
+
+footer {
+  margin: 20px;
+  display: flex;
+}
+
+footer > div {
+  margin: 0 auto;
 }
