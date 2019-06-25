@@ -1,8 +1,11 @@
+@font-face {
+    font-family: "infinity";
+    src: url('../infinity/infinity.ttf');
+}
+
 body {
   display: flex;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
   min-height: 100vh;
   flex-direction: column;
   align-items:center;
@@ -15,7 +18,7 @@ body {
   align-items: center;
 }
 
-.header {
+/* .header {
   display: flex;
   background: linear-gradient(white, #248bcd);
   padding-top: 80px;
@@ -38,27 +41,44 @@ body {
 .header-pic {
   height: 260px;
   width: 400px;
-}
+} */
 
 .nav {
-  background: #248bcd;
+  background: white;
   color: #fff;
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
   position: fixed;
   width: 100%;
+  height: 101px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  float: left;
+  width: 260px;
+  height: 77px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .nav-list {
   display: flex;
   justify-content: flex-start;
+  color: gray;
 }
 
 .nav-list > li > a {
   display: block;
   padding: 2rem 1.5rem;
+  font-size: 11px;
 }
 
 .nav-list > li:hover {
@@ -69,49 +89,58 @@ section {
   display: flex;
   padding-top: 80px;
   flex-direction: column;
+  color: white;
+  height: 606px;
+
 }
 
 #section1 {
-  background: linear-gradient(#248bcd, white);
+  background: url("../images/bg1.jpg") no-repeat center;
+  background-size: cover;
 }
 
 #section2 {
-  background: linear-gradient(white, #248bcd);
+  background: url("../images/bg3.jpg") no-repeat center;
+  background-size: cover;
 }
 
 #section3 {
-  background: linear-gradient(#248bcd, white);
+  background: url("../images/bg26.jpg") no-repeat center;
+  background-size: cover;
 }
 
 h1 {
-  font-size: 30px;
-  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: infinity;
+  font-size: 60px;
+  font-weight: 200;
 }
 
 .section-content {
   display: flex;
   padding: 20px;
+  justify-content: center;
 }
 
 .section-text {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   width: 66%;
+  line-height: 22px;
 }
 
 .section-text > div {
   margin-bottom: 10px;
 }
 
-.section-pic {
-  width: 33%;
-  margin-right: 20px;
-}
-
 .contact-info {
   display: flex;
   width: 500px;
   justify-content: space-between;
+  line-height: 22px;
 }
 
 .contact-info > div {
@@ -119,20 +148,24 @@ h1 {
   flex-direction: column;
 }
 
-.active {
-  border-bottom: .25rem solid #64a19d;
-  color: white;
-}
-
 .contact-info, .address, .phone-fax {
   margin: 0;
 }
 
 footer {
-  margin: 20px;
+  height: 120px;
   display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #248bcd;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-footer > div {
-  margin: 0 auto;
+footer > img {
+  width: 203px;
+  height: 60px;
+  margin-bottom: 10px;
 }

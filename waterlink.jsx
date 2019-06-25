@@ -6,23 +6,19 @@ class Waterlink extends React.Component{
     return (
       <content className="page-content">
         <nav className="nav">
-          <ul className="nav-list">
-            <li><a className="active" href="#section1">About</a></li>
-            <li><a href="#section2">Services</a></li>
-            <li><a href="#section3">Contact</a></li>
-          </ul>
-        </nav>
-        <header className="header">
-          <div className="header-content">
-            <img className="header-logo" src="assets/images/waterlink.png"></img>
-            <img className="header-pic" src="assets/images/cargo-ship.jpg"></img>
+          <div className="nav-container">
+            <img id="logo" src="assets/images/waterlink.png"></img>
+            <ul className="nav-list">
+              <li><a href="#section1">ABOUT</a></li>
+              <li><a href="#section2">SERVICES</a></li>
+              <li><a href="#section3">CONTACT</a></li>
+            </ul>
           </div>
-        </header>
+        </nav>
 
         <section id="section1">
-          <h1>About Us</h1>
+          <h1>ABOUT US</h1>
           <div className="section-content">
-            <img className="section-pic" src="assets/images/cargo-ship.jpg"></img>
             <div className="section-text">
               <div>Waterlink America, a major player in the new order of global transportation, has for over a decade strengthened our position as the leading transportation specialist to and from the Far East. Now with market and trade requirements changing rapidly, we have affluently continued to expand into further trade routes. Globally, Waterlink is everywhere, leading the Transportation Industry through the sheer power of reliability and quality assurance.</div>
               <div>We strive to combine the raw basics of international trade to supply you with a formidable tool in today’s competitive marketplace. No longer is freight logistics a problem to delay or complicate your day to day business, as our infrastructure throughout the world essentially eliminates your concern, continuously providing assurance of expedient and competitive delivery. With the best network of warehousing, distribution, on-carriage and customs agents, we effectively service every aspect of international freight forwarding. Our competent logistics department is available upon demand for creating tough problem solving strategies.</div>
@@ -31,7 +27,7 @@ class Waterlink extends React.Component{
         </section>
 
         <section id="section2">
-          <h1>Our Services</h1>
+          <h1>OUR SERVICES</h1>
           <div className="section-content">
             <div className="section-text">
               <div>Waterlink America provides our customers reliable and cost-effective freight shipping solutions for cargo transportation and transport logistics services worldwide. Our standard transport logistics services include ground transportation, air freight, and ocean freight. We handle domestic United States traffic as well as international freight shipping.</div>
@@ -43,7 +39,7 @@ class Waterlink extends React.Component{
         </section>
 
         <section id="section3">
-          <h1>Contact</h1>
+          <h1>CONTACT</h1>
           <div className="section-content">
             <div className="contact-info">
               <div className="address">
@@ -62,7 +58,8 @@ class Waterlink extends React.Component{
         </section>
 
         <footer id="footer">
-          <div>Copyright Waterlink America 2019</div>
+          <img src="./assets/images/logo_white.png"></img>
+          <div>COPYRIGHT 2018. ALL RIGHTS RESERVED</div>
         </footer>
 
       </content>

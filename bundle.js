@@ -24875,43 +24875,34 @@ function (_React$Component) {
         className: "page-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
         className: "nav"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "nav-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        id: "logo",
+        src: "assets/images/waterlink.png"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "nav-list"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "active",
         href: "#section1"
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "ABOUT")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#section2"
-      }, "Services")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "SERVICES")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#section3"
-      }, "Contact")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-        className: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "header-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "header-logo",
-        src: "assets/images/waterlink.png"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "header-pic",
-        src: "assets/images/cargo-ship.jpg"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      }, "CONTACT"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         id: "section1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "ABOUT US"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "section-pic",
-        src: "assets/images/cargo-ship.jpg"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-text"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Waterlink America, a major player in the new order of global transportation, has for over a decade strengthened our position as the leading transportation specialist to and from the Far East. Now with market and trade requirements changing rapidly, we have affluently continued to expand into further trade routes. Globally, Waterlink is everywhere, leading the Transportation Industry through the sheer power of reliability and quality assurance."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "We strive to combine the raw basics of international trade to supply you with a formidable tool in today\u2019s competitive marketplace. No longer is freight logistics a problem to delay or complicate your day to day business, as our infrastructure throughout the world essentially eliminates your concern, continuously providing assurance of expedient and competitive delivery. With the best network of warehousing, distribution, on-carriage and customs agents, we effectively service every aspect of international freight forwarding. Our competent logistics department is available upon demand for creating tough problem solving strategies.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         id: "section2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Our Services"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OUR SERVICES"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-text"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Waterlink America provides our customers reliable and cost-effective freight shipping solutions for cargo transportation and transport logistics services worldwide. Our standard transport logistics services include ground transportation, air freight, and ocean freight. We handle domestic United States traffic as well as international freight shipping."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "We are a dedicated team of highly trained freight shipping specialists, structured to provide our customers with a competitive edge."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "We built a solid infrastructure of global freight management to support international freight shipping that is focused on our core competency \u2013 versatility in accommodating each customer\u2019s special handling and freight shipping requirements."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "No matter where or what time in the world, we are here to assist you in every aspect of your transport logistics service needs.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         id: "section3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "CONTACT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-info"
@@ -24921,7 +24912,9 @@ function (_React$Component) {
         className: "phone-fax"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Phone: (718) 995-2244"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Fax: (718) 995-2255"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Email: WaterlinkAmerica@aol.com"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
         id: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Copyright Waterlink America 2019")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "./assets/images/logo_white.png"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "COPYRIGHT 2018. ALL RIGHTS RESERVED")));
     }
   }]);
 
