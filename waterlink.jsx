@@ -59,7 +59,7 @@ class Waterlink extends React.Component{
 
         <footer id="footer">
           <img src="./assets/images/logo_white.png"></img>
-          <div>COPYRIGHT 2018. ALL RIGHTS RESERVED</div>
+          <div>COPYRIGHT 2019. ALL RIGHTS RESERVED</div>
         </footer>
 
       </content>

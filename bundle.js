@@ -24914,7 +24914,7 @@ function (_React$Component) {
         id: "footer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "./assets/images/logo_white.png"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "COPYRIGHT 2018. ALL RIGHTS RESERVED")));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "COPYRIGHT 2019. ALL RIGHTS RESERVED")));
     }
   }]);
 
