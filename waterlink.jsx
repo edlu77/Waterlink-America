@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './contact_form';
 
 class Waterlink extends React.Component{
 
@@ -55,6 +56,7 @@ class Waterlink extends React.Component{
               </div>
             </div>
           </div>
+          <ContactForm />
         </section>
 
         <footer id="footer">
