@@ -165,6 +165,7 @@ function (_React$Component) {
     _this.handleCompany = _this.handleCompany.bind(_assertThisInitialized(_this));
     _this.handleAddress = _this.handleAddress.bind(_assertThisInitialized(_this));
     _this.handleMessage = _this.handleMessage.bind(_assertThisInitialized(_this));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -211,42 +212,69 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+
+      if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
+        return;
+      } else {
+        this.setState({
+          name: "",
+          email: "",
+          designation: "",
+          company: "",
+          address: "",
+          message: ""
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
-      console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "contact-form"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Contact Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "contact-input",
         type: "text",
-        placeholder: "name",
+        placeholder: "Name",
         value: this.state.name,
         onChange: this.handleName
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "contact-input",
         type: "text",
-        placeholder: "email",
+        placeholder: "Email",
         value: this.state.email,
         onChange: this.handleEmail
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "contact-input",
         type: "text",
-        placeholder: "designation",
+        placeholder: "Designation",
         value: this.state.designation,
         onChange: this.handleDesignation
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "contact-input",
         type: "text",
-        placeholder: "company",
+        placeholder: "Company",
         value: this.state.company,
         onChange: this.handleCompany
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "contact-input",
         type: "text",
-        placeholder: "address",
+        placeholder: "Full address (City, State/Province, Country)",
         value: this.state.address,
         onChange: this.handleAddress
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        placeholder: "message",
+        className: "contact-input",
+        id: "message-box",
+        type: "textarea",
+        placeholder: "Message",
         value: this.state.message,
         onChange: this.handleMessage
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "submit-button",
+        onClick: this.handleSubmit
+      }, "Submit"));
     }
   }]);
 
@@ -25061,7 +25089,7 @@ function (_React$Component) {
         className: "address"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Address:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "182-16 147th Ave, Suite 202"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Jamaica, NY 11413")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "phone-fax"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Phone: (718) 995-2244"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Fax: (718) 995-2255"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Email: WaterlinkAmerica@aol.com")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_contact_form__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Phone: (718) 995-2244"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Fax: (718) 995-2255"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Email: WaterlinkAmerica@aol.com"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_contact_form__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
         id: "footer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "./assets/images/logo_white.png"
@@ -25072,26 +25100,7 @@ function (_React$Component) {
   return Waterlink;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Waterlink); // <div>
-//   <header className="header">
-//     <div className="header-top">
-//       <img className="header-logo" src="assets/images/waterlink.png"></img>
-//       <img className="header-pic" src="assets/images/cargo-ship.jpg"></img>
-//     </div>
-//
-//     <nav className="header-nav">
-//       <ul className="header-list">
-//         <li><a className="active" href="/">About</a></li>
-//         <li><a href="/">Services</a></li>
-//         <li><a href="/">Contact</a></li>
-//       </ul>
-//     </nav>
-//   </header>
-//   <main>
-//     <div>Waterlink America, a major player in the new order of global transportation, has for over a decade strengthened our position as the leading transportation specialist to and from the Far East. Now with market and trade requirements changing rapidly, we have affluently continued to expand into further trade routes. Globally, Waterlink is everywhere, leading the Transportation Industry through the sheer power of reliability and quality assurance.</div>
-//     <div>We strive to combine the raw basics of international trade to supply you with a formidable tool in today’s competitive marketplace. No longer is freight logistics a problem to delay or complicate your day to day business, as our infrastructure throughout the world essentially eliminates your concern, continuously providing assurance of expedient and competitive delivery. With the best network of warehousing, distribution, on-carriage and customs agents, we effectively service every aspect of international freight forwarding. Our competent logistics department is available upon demand for creating tough problem solving strategies.</div>
-//   </main>
-// </div>
+/* harmony default export */ __webpack_exports__["default"] = (Waterlink);
 
 /***/ })
 

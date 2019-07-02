@@ -18,6 +18,7 @@ class ContactForm extends React.Component {
     this.handleCompany = this.handleCompany.bind(this);
     this.handleAddress= this.handleAddress.bind(this);
     this.handleMessage = this.handleMessage.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   };
 
   handleName(e) {
@@ -50,46 +51,67 @@ class ContactForm extends React.Component {
       message: e.target.value
     })
   }
+  handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
+      return
+    } else {
+      this.setState({
+        name: "",
+        email: "",
+        designation: "",
+        company: "",
+        address: "",
+        message: "",
+      })
+    }
+  }
 
   render() {
-    console.log(this.state)
     return (
-        <form className="contact-form">
-          <input
-            type="text"
-            placeholder="name"
-            value={this.state.name}
-            onChange={this.handleName}/>
-          <input
-            type="text"
-            placeholder="email"
-            value={this.state.email}
-            onChange={this.handleEmail}/>
-          <input
-            type="text"
-            placeholder="designation"
-            value={this.state.designation}
-            onChange={this.handleDesignation}/>
-          <input
-            type="text"
-            placeholder="company"
-            value={this.state.company}
-            onChange={this.handleCompany}/>
-          <input
-            type="text"
-            placeholder="address"
-            value={this.state.address}
-            onChange={this.handleAddress}/>
-          <input
-            type="text"
-            placeholder="message"
-            value={this.state.message}
-            onChange={this.handleMessage}/>
-        </form>
-
+      <form className="contact-form">
+        <h1>Contact Form</h1>
+        <input
+          className="contact-input"
+          type="text"
+          placeholder="Name"
+          value={this.state.name}
+          onChange={this.handleName}/>
+        <input
+          className="contact-input"
+          type="text"
+          placeholder="Email"
+          value={this.state.email}
+          onChange={this.handleEmail}/>
+        <input
+          className="contact-input"
+          type="text"
+          placeholder="Designation"
+          value={this.state.designation}
+          onChange={this.handleDesignation}/>
+        <input
+          className="contact-input"
+          type="text"
+          placeholder="Company"
+          value={this.state.company}
+          onChange={this.handleCompany}/>
+        <input
+          className="contact-input"
+          type="text"
+          placeholder="Full address (City, State/Province, Country)"
+          value={this.state.address}
+          onChange={this.handleAddress}/>
+        <input
+          className="contact-input"
+          id="message-box"
+          type="textarea"
+          placeholder="Message"
+          value={this.state.message}
+          onChange={this.handleMessage}/>
+        <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+      </form>
     )
   };
-
 };
 
 export default ContactForm;

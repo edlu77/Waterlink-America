@@ -152,6 +152,37 @@ h1 {
   margin: 0;
 }
 
+.contact-form {
+  width: 412px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.contact-input {
+  height: 30px;
+  border: 1px solid #248bcc;
+  margin: 5px;
+  padding-left: 10px;
+}
+
+#message-box {
+  height: 60px;
+}
+
+.submit-button {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 20px 5px 20px;
+  margin: 5px;
+  background: #248bcc;
+}
+
 footer {
   height: 120px;
   display: flex;
