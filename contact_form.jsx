@@ -52,22 +52,24 @@ class ContactForm extends React.Component {
     })
   }
   handleSubmit(e) {
-    e.preventDefault();
     if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
       return
     } else {
-      this.setState({
+      setTimeout(() => {
+        this.setState({
         name: "",
         email: "",
         designation: "",
         company: "",
         address: "",
         message: "",
-      })
+      })}, 1)
     }
   }
 
   render() {
+    let body = `Name: ${this.state.name}%0D%0A%0D%0AEmail: ${this.state.email}%0D%0A%0D%0ADesignation: ${this.state.designation}%0D%0A%0D%0ACompany: ${this.state.company}%0D%0A%0D%0AAddress: ${this.state.address}%0D%0A%0D%0A${this.state.message}`
+    let email = `mailto:eddd.lu@gmail.com?subject=Information Request&body=${body}`;
     return (
       <form className="contact-form">
         <h1>Contact Form</h1>
@@ -101,17 +103,19 @@ class ContactForm extends React.Component {
           placeholder="Full address (City, State/Province, Country)"
           value={this.state.address}
           onChange={this.handleAddress}/>
-        <input
+        <textarea
           className="contact-input"
           id="message-box"
           type="textarea"
           placeholder="Message"
           value={this.state.message}
           onChange={this.handleMessage}/>
-        <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+        <a className="submit-button" onClick={this.handleSubmit} href={email}>Submit</a>
       </form>
     )
   };
 };
 
 export default ContactForm;
+
+// <button className="submit-button" onClick={this.handleSubmit}>Submit</button>

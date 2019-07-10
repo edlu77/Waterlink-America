@@ -171,7 +171,8 @@ h1 {
 }
 
 #message-box {
-  height: 60px;
+  height: 90px;
+  padding-top: 8px;
 }
 
 .submit-button {

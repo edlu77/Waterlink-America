@@ -214,24 +214,28 @@ function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      e.preventDefault();
+      var _this2 = this;
 
       if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
         return;
       } else {
-        this.setState({
-          name: "",
-          email: "",
-          designation: "",
-          company: "",
-          address: "",
-          message: ""
-        });
+        setTimeout(function () {
+          _this2.setState({
+            name: "",
+            email: "",
+            designation: "",
+            company: "",
+            address: "",
+            message: ""
+          });
+        }, 1);
       }
     }
   }, {
     key: "render",
     value: function render() {
+      var body = "Name: ".concat(this.state.name, "%0D%0A%0D%0AEmail: ").concat(this.state.email, "%0D%0A%0D%0ADesignation: ").concat(this.state.designation, "%0D%0A%0D%0ACompany: ").concat(this.state.company, "%0D%0A%0D%0AAddress: ").concat(this.state.address, "%0D%0A%0D%0A").concat(this.state.message);
+      var email = "mailto:eddd.lu@gmail.com?subject=Information Request&body=".concat(body);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "contact-form"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Contact Form"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -264,16 +268,17 @@ function (_React$Component) {
         placeholder: "Full address (City, State/Province, Country)",
         value: this.state.address,
         onChange: this.handleAddress
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         className: "contact-input",
         id: "message-box",
         type: "textarea",
         placeholder: "Message",
         value: this.state.message,
         onChange: this.handleMessage
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "submit-button",
-        onClick: this.handleSubmit
+        onClick: this.handleSubmit,
+        href: email
       }, "Submit"));
     }
   }]);
@@ -282,7 +287,7 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 ;
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm); // <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
 
 /***/ }),
 
