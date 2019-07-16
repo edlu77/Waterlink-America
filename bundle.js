@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_waterlink__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('root'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_waterlink__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('main'));
 });
 
 /***/ }),
@@ -217,34 +217,36 @@ function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this2 = this;
-
       e.preventDefault();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default.a.ajax({
+        url: '/api/messages',
+        type: 'POST',
+        cache: false,
+        data: {
+          message: {
+            body: "body",
+            email: this.state.email,
+            name: this.state.name
+          }
+        }
+      });
 
       if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
         return;
-      } else {
-        jquery__WEBPACK_IMPORTED_MODULE_1___default.a.ajax({
-          url: "/api/messages",
-          method: "POST",
-          data: {
-            message: {
-              body: "body",
-              email: this.state.email,
-              name: this.state.name
-            }
-          }
-        });
-        setTimeout(function () {
-          _this2.setState({
-            name: "",
-            email: "",
-            designation: "",
-            company: "",
-            address: "",
-            message: ""
-          });
-        }, 1);
+      } else {// $.ajax({
+        //   url: "/api/messages",
+        //   method: "POST",
+        //   data: {message: {body: "body", email: this.state.email, name: this.state.name}},
+        // })
+        // setTimeout(() => {
+        //   this.setState({
+        //   name: "",
+        //   email: "",
+        //   designation: "",
+        //   company: "",
+        //   address: "",
+        //   message: "",
+        // })}, 1)
       }
     }
   }, {

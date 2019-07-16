@@ -54,25 +54,33 @@ class ContactForm extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    
+    $.ajax({
+        url: '/api/messages',
+        type: 'POST',
+        cache: false,
+        data: {message: {body: "body", email: this.state.email, name: this.state.name}},
+    });
+
     if (this.state.name === "" || this.state.email === "" || this.state.designation === "" || this.state.company === "" || this.state.address === "" || this.state.message === "") {
       return
     } else {
-      $.ajax({
-        url: "/api/messages",
-        method: "POST",
-        data: {message: {body: "body", email: this.state.email, name: this.state.name}},
-      })
+      // $.ajax({
+      //   url: "/api/messages",
+      //   method: "POST",
+      //   data: {message: {body: "body", email: this.state.email, name: this.state.name}},
+      // })
 
-      setTimeout(() => {
-        this.setState({
-        name: "",
-        email: "",
-        designation: "",
-        company: "",
-        address: "",
-        message: "",
-      })}, 1)
+      // setTimeout(() => {
+      //   this.setState({
+      //   name: "",
+      //   email: "",
+      //   designation: "",
+      //   company: "",
+      //   address: "",
+      //   message: "",
+      // })}, 1)
+
+
 
     }
   }
